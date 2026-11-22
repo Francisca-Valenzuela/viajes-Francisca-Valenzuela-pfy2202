@@ -1,0 +1,51 @@
+// src/mocks/data/destinos.js
+export const destinos = [
+  {
+    id: 1,
+    nombre: "París",
+    pais: "Francia",
+    descripcion: "La ciudad del amor, famosa por su arte, gastronomía y arquitectura.",
+    imagen: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800",
+    actividades: ["Torre Eiffel", "Museo del Louvre", "Crucero por el Sena", "Montmartre"],
+  },
+  {
+    id: 2,
+    nombre: "Tokio",
+    pais: "Japón",
+    descripcion: "Una mezcla única de tradición milenaria y tecnología de vanguardia.",
+    imagen: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=800",
+    actividades: ["Templo Senso-ji", "Cruce de Shibuya", "Mercado de Tsukiji", "Monte Fuji"],
+  },
+  {
+    id: 3,
+    nombre: "Cusco",
+    pais: "Perú",
+    descripcion: "Antigua capital del Imperio Inca y puerta de entrada a Machu Picchu.",
+    imagen: "https://images.unsplash.com/photo-1526392060635-9d6019884377?w=800",
+    actividades: ["Machu Picchu", "Valle Sagrado", "Sacsayhuamán", "Montaña de Siete Colores"],
+  },
+  {
+    id: 4,
+    nombre: "Nueva York",
+    pais: "Estados Unidos",
+    descripcion: "La ciudad que nunca duerme, con Broadway, museos y rascacielos icónicos.",
+    imagen: "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=800",
+    actividades: ["Central Park", "Estatua de la Libertad", "Times Square", "Broadway"],
+  },
+  {
+    id: 5,
+    nombre: "Roma",
+    pais: "Italia",
+    descripcion: "Historia viva en cada esquina: el Coliseo, el Vaticano y la mejor pasta.",
+    imagen: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=800",
+    actividades: ["Coliseo", "Fontana di Trevi", "Ciudad del Vaticano", "Foro Romano"],
+  },
+  {
+    id: 6,
+    nombre: "Río de Janeiro",
+    pais: "Brasil",
+    descripcion: "Playas famosas, montañas frente al mar y un carnaval inigualable.",
+    imagen: "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=800",
+    actividades: ["Cristo Redentor", "Pan de Azúcar", "Playa de Copacabana", "Barrio de Santa Teresa"],
+  },
+];

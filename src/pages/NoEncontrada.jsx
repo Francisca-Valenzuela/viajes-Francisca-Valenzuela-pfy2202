@@ -1,0 +1,14 @@
+// src/pages/NoEncontrada.jsx
+import { Link } from "react-router-dom";
+
+function NoEncontrada() {
+  return (
+    <section>
+      <h1>Página no encontrada</h1>
+      <p>La dirección que buscas no existe.</p>
+      <Link to="/">Volver al inicio</Link>
+    </section>
+  );
+}
+
+export default NoEncontrada;
