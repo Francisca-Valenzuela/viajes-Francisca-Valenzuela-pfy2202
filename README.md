@@ -6,7 +6,7 @@ Proyecto de la actividad sumativa **"Integrando nuestro frontend con backend"** 
 
 - **Autora:** Francisca Valenzuela
 - **Repositorio:** https://github.com/Francisca-Valenzuela/viajes-francisca-valenzuela-pfy2202
-- **Aplicación publicada (GitHub Pages):** https://francisca-valenzuela.github.io/viajes-francisca-valenzuela-pfy2202/
+- **Aplicación publicada (GitHub Pages):** [https://francisca-valenzuela.github.io/viajes-francisca-valenzuela-pfy2202/](https://francisca-valenzuela.github.io/viajes-Francisca-Valenzuela-pfy2202/)
 
 ## Funcionalidades
 
