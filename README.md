@@ -6,7 +6,7 @@ Proyecto de la actividad sumativa **"Integrando nuestro frontend con backend"** 
 
 - **Autora:** Francisca Valenzuela
 - **Repositorio:** https://github.com/Francisca-Valenzuela/viajes-francisca-valenzuela-pfy2202
-- **Aplicación publicada (GitHub Pages):** [https://francisca-valenzuela.github.io/viajes-francisca-valenzuela-pfy2202/](https://francisca-valenzuela.github.io/viajes-Francisca-Valenzuela-pfy2202/)
+- **Aplicación publicada (GitHub Pages):** https://francisca-valenzuela.github.io/viajes-francisca-valenzuela-pfy2202/
 
 ## Funcionalidades
 
@@ -154,17 +154,28 @@ npm run deploy
 
 El comando compila el proyecto y publica la carpeta `dist/` en la rama `gh-pages`. Luego, en el repositorio de GitHub, ve a **Settings → Pages** y verifica que la fuente sea la rama `gh-pages` (carpeta `/ (root)`).
 
-## Pruebas en navegadores
+## Pruebas unitarias
 
-Se recorrieron las vistas, la selección de destinos, la consulta de vuelos y hoteles y la navegación (incluida la recarga de página en rutas internas) en:
+Herramientas: **Jest**, **React Testing Library** y **MSW** (`msw/node`) para simular el backend REST y GraphQL.
 
-| Navegador | Resultado |
+```bash
+npm test               # ejecuta las pruebas
+npm run test:coverage  # ejecuta las pruebas con reporte de cobertura
+```
+
+Se usa `--experimental-vm-modules` porque MSW 3 es solo ESM; el warning "ExperimentalWarning" es normal.
+
+| Carpeta | Qué se prueba |
 |---|---|
-| Google Chrome | ☐ |
-| Mozilla Firefox | ☐ |
-| Microsoft Edge | ☐ |
-| Brave | ☐ |
-| Móvil (modo dispositivo / equipo real) | ☐ |
+| `src/__tests__/utils` | Formato de precios y fechas |
+| `src/__tests__/services` | Servicios REST y GraphQL (éxito y errores) |
+| `src/__tests__/hooks` | Hook `useConsulta` |
+| `src/__tests__/components` | Componentes de presentación |
+| `src/__tests__/pages` | Páginas y navegación entre sub-rutas |
+| `src/__tests__/App.test.jsx` | Flujo completo de la aplicación |
+
+**Cobertura obtenida:** 100% en Stmts, Branch, Funcs y Lines (mínimo exigido: 50%).
+`main.jsx` y `mocks/browser.js` se excluyen porque solo arrancan el Service Worker del navegador.
 
 ## Créditos
 
